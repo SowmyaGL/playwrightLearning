@@ -8,7 +8,8 @@ test('verify add job title with mandatory field', async ({ page }) => {
     await page.locator("input[type='password']").fill("admin123");
     await page.locator("button[type='submit']").click();
 
-    await expect(page).toHaveURL('https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index');
+    await page.locator("(//input[@class='oxd-input oxd-input--active'])[2]").fill(`SDET ${randomNumber}`)
+    await expect(page).toHaveURL('');
     await page.locator("//span[text()='Admin']").click();
     await page.locator('a[href="/web/index.php/admin/viewAdminModule"]').click();
     await page.locator("//li[contains(.,'Job')]").click();
