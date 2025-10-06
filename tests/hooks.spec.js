@@ -16,23 +16,30 @@ test.afterAll(() =>{
     console.log("after all test");
 })
 
-
-
-
-test("test1",async ()=>{
+test.describe("group1", () => {
+    test("test1",async ()=>{
     console.log("test1")
 })
 
 
-test("test2",async ()=>{
+test.skip("test2",async ()=>{
     console.log("test2")
 })
 
+})
 
-test("test3",async ()=>{
+
+
+
+
+test.describe("group2",() =>{
+    test.skip("test3",async ()=>{
     console.log("test3")
 })
 
-test("test4",async ()=>{
+test.only("test4",async ()=>{
     console.log("test4")
 })
+})
+
+

@@ -1,0 +1,16 @@
+
+const { test, expect } = require('@playwright/test');
+exports.dashBoardpage = class dashBoardpage{
+    constructor(page){
+
+        this.page= page
+
+        this.pim = page.locator('a[href="/web/index.php/pim/viewPimModule"]')
+        
+        
+    }
+    async clickonPIM(){
+        await this,this.pim.click()
+
+    }
+}
