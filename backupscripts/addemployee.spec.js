@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('add emplyoee creatipon validation', {tag : "@smoke"},async({page})=> {
+test('add emplyoee creatipon validation',{tag: "@smoke"},async({page})=> {
     await page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
     await page.locator("input[name='username']").fill('Admin');
     await page.locator("input[name='password']").fill('admin123');
@@ -12,7 +12,7 @@ test('add emplyoee creatipon validation', {tag : "@smoke"},async({page})=> {
     await page.locator("input[name='lastName']").fill('GL');
 
     await page.locator("//button[contains(.,'Save')]").click();
-    await expect(page).toHaveURL('https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewPersonalDetails/empNumber/213')
+    await expect(page).toHaveURL('https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewPersonalDetails/empNumber/290')
 
 
 });

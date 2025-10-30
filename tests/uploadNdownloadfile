@@ -1,0 +1,24 @@
+
+
+// const {browser,test,expect} = require('@playwright/test');
+// const fs = require('fs');
+// const path = require('path');
+
+//  test.describe('automation - working with elements',()=>{
+
+//     test('playwright test case - upload file',async ({page})=>{
+//         await page.goto("https://the-internet.herokuapp.com/upload")
+//         await page.locator('#file-upload').setInputFiles('./testdata/files/nature.webp')
+//         await page.locator('#file-submit').click()
+        
+//     })
+//  })
+
+ //download file
+
+ const[download]= await promiseHooks.all([
+    page.waitForEvent('download'),
+    page.click('a[href="download/learn.jpg"]').click()
+ ])
+
+ //save it

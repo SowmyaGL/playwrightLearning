@@ -1,0 +1,7 @@
+
+
+test("veryfy scrolling",async ({page}) =>{
+    await page.goto("https://www.flipkart.com/")
+    await page.locator("//span[text()='Help Center']").click()
+
+})
