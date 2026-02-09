@@ -1,5 +1,5 @@
-{
-    "usename"  :"Admin",
+export const userdetails = {
+    "username"  :"Admin",
     "password" :"admin123",
     "wrongusername" : "fhghcg",
     "wrongpassword" : "dtgdyghgb"
