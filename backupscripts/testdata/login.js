@@ -5,7 +5,6 @@ export const userdetails = {
     wrongPassword: "dtgdyghgb"
 };
 
-
 export const arun = {
     arun: "arun"
 }

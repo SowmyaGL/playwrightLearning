@@ -10,7 +10,6 @@ import { userdetails } from "./testdata/login";
 
 import { addEmployeepage } from "./pageObjects/addemployeepage.po";
 
-
 test("veryfy add employee", async ({ page }) => {
     const login = new loginpage(page)
     const dashboard = new dashBoardpage(page)

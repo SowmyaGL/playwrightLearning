@@ -15,5 +15,4 @@ test("verify create a reddif email account", async ({ page })=>{
     await page.pause();
     await page.locator("div#div_city>div>select").selectOption({ label: 'Chennai' });
 
-
 });

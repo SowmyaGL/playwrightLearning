@@ -44,14 +44,14 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
 
-    {
-      name: "setup",
-      use: {
-        ...devices['desktop chrome'],
-        channel: 'chrome'
-      },
-      testMatch: /.*\.setup\.js/,
-    },
+    // {
+    //   name: "setup",
+    //   use: {
+    //     ...devices['desktop chrome'],
+    //     channel: 'chrome'
+    //   },
+    //   testMatch: /.*\.setup\.js/,
+    // },
     // {
     //   name: 'chromium',
     //   use: { ...devices['Desktop Chrome'] },
@@ -89,7 +89,7 @@ export default defineConfig({
         storageState: ".auth/user.json",
 
       },
-      dependencies: ["setup"],
+      // dependencies: ["setup"],
     },
   ],
 

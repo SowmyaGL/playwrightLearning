@@ -1,7 +1,6 @@
 const { test, expect } = require('@playwright/test');
 
 
-
 test('verify add job title with mandatory field', async ({ page }) => {
 
     //nst addtocartitems = [banana, apple, orange];

@@ -45,9 +45,9 @@
 //===================================================
 const { test, expect } = require('@playwright/test');
 
-import { loginPage } from "../../pageObjects/loginpage.po"
+import { loginPage } from "./pageobjects/loginpage.po"
 
-import {logindata} from "../../testdata/login.json"
+import logindata from './testdata/login.json'
 
 
 let page;

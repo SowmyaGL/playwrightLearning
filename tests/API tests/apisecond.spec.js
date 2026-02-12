@@ -1,7 +1,5 @@
 import { expect, test } from "@playwright/test";
 
-
-
 test("verify list of users Get API",async ({ request }) => {
 
 //   const headers = {x-api-key: reqres-free-v1}
@@ -11,7 +9,6 @@ test("verify list of users Get API",async ({ request }) => {
   
 
  } );
-
 
   expect(getAllUsers.ok()).toBeTruthy(); //true
   expect(getAllUsers.status()).toBe(200);

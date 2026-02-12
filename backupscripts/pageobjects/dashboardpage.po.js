@@ -1,6 +1,5 @@
-
 const { test, expect } = require('@playwright/test');
-class dashBoardpage {
+class DashBoardPage {
     constructor(page) {
 
         this.page = page
@@ -15,4 +14,4 @@ class dashBoardpage {
     }
 }
 
-export default dashBoardpage();
+export default DashBoardPage();

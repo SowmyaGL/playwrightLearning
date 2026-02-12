@@ -1,4 +1,3 @@
-
 const { test, expect } = require('@playwright/test');
 
 import { LoginPage } from "./pageobjects/loginpage.po";
