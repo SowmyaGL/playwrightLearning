@@ -3,6 +3,12 @@ const { test, expect } = require('@playwright/test');
 
 
 test('verify add job title with mandatory field', async ({ page }) => {
+
+    //nst addtocartitems = [banana, apple, orange];
+
+    //all three items sould be added to the cart
+    //verify all items price is qual to total price
+
     await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
     await page.locator("input[name='username']").fill("admin");
     await page.locator("input[type='password']").fill("admin123");

@@ -1,6 +1,6 @@
-export const userdetails = {
-    "username"  :"Admin",
-    "password" :"admin123",
-    "wrongusername" : "fhghcg",
-    "wrongpassword" : "dtgdyghgb"
+{
+    "usename": "Admin",
+    "password": "admin123",
+    "wrongusername": "fhghcg",
+    "wrongpassword": "dtgdyghgb"
 }
